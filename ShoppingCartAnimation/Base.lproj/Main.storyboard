@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="i9G-Oh-Z1h">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7j-76-OA1">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart_img" translatesAutoresizingMaskIntoConstraints="NO" id="fOV-fa-jc5">
+                                        <rect key="frame" x="8" y="8" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="P5j-u5-Z6m"/>
+                                            <constraint firstAttribute="height" constant="30" id="iQ4-ze-xyf"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.78823529410000004" green="0.79215686269999996" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="8UM-QC-xOb"/>
+                                    <constraint firstItem="fOV-fa-jc5" firstAttribute="leading" secondItem="h7j-76-OA1" secondAttribute="leading" constant="8" id="twc-38-BxY"/>
+                                    <constraint firstItem="fOV-fa-jc5" firstAttribute="top" secondItem="h7j-76-OA1" secondAttribute="top" constant="8" id="znn-dc-9Dp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="h7j-76-OA1" secondAttribute="bottom" id="6i7-9o-o8R"/>
+                            <constraint firstItem="h7j-76-OA1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vhQ-PC-RxO"/>
+                            <constraint firstAttribute="trailing" secondItem="h7j-76-OA1" secondAttribute="trailing" id="y4C-BU-RDO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vPp-S0-esO"/>
+                    <connections>
+                        <outlet property="bottomView" destination="h7j-76-OA1" id="nEM-27-Ynd"/>
+                        <outlet property="cartImgView" destination="fOV-fa-jc5" id="vUv-Kb-C8P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1082" y="349"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qUt-FM-fHC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i9G-Oh-Z1h" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ycI-Aw-Xxg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8ch-PB-auT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pRK-Vp-6YY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="-343"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cart_img" width="64" height="64"/>
+    </resources>
+</document>
